@@ -56,7 +56,7 @@ It is common within the fNIRS community for researchers to build their own caps
 and optode holders to position their sources and detectors, or for optodes to
 be directly attached to the scalp with adhesive. To facilitate description of
 the wide variety of possible configurations, several fields are RECOMMENDED within
-the `_*nirs.json` file.
+the `*_nirs.json` file.
 To clarify the usage and interaction of these fields, the following examples are provided.
 If a commercial cap such as EasyCap actiCAP 64 Ch Standard-2
 was used, then the values `CapManufacturer = ”EasyCap”`, `CapManufacturersModelName = ”actiCAP
