@@ -222,8 +222,8 @@ should be stored according to their appropriate modality specification.
 For example, motion data that was simultaneously recorded with a different device should be specified
 according to BEP029 and not according to the fNIRS data type.
 Whereas, if the motion data was acquired in with the fNIRS device itself, it should be included here with the fNIRS data.
-Any of the channel types defined in other BIDS specification can be used here as well,
-and several of these data types which are commonly acquired using fNIRS devices are included at the base of the table.
+Any of the channel types defined in other BIDS specification can be used here as well such as ACCEL or MAGN.
+As several of these data types are commonly acquired using fNIRS devices they are included as an example at the base of the table.
 Note that upper-case is REQUIRED.
 
 | **Keyword**                 | **Description**                                                                                                                                                              |
@@ -247,6 +247,7 @@ S1-D1        NIRSCWAMPLITUDE        A1          Fz            760               
 S1-D1        NIRSCWAMPLITUDE        A1          Fz            850                  V
 S1-D2        NIRSCWAMPLITUDE        A1          Cz            760                  V
 S2-D1        NIRSCWAMPLITUDE        A2          Fz            760                  V
+S3-D4        NIRSCWAMPLITUDE        VisS2       VisD4         760                  V
 ```
 
 ## Optode description (`*_optodes.tsv`)
@@ -294,6 +295,8 @@ A1      source       -0.0707    0.0000    -0.0707    -0.07         0.00         
 Fz      detector     0.0000     0.0714    0.0699     0.0           0.07         0.07
 S1      source       -0.2707    0.0200    -0.1707    -0.03         0.02         -0.2
 D2      detector     0.0022     0.1214    0.0299     0.0           0.12         0.03
+VisS2   source       -0.1707    0.1200    -0.3707    -0.1          0.1          -0.4
+VisD4   detector     0.0322     0.2214    0.2299     0.02          0.22         0.23
 ```
 
 ## Coordinate System JSON (`*_coordsystem.json`)
